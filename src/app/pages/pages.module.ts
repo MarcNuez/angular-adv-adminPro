@@ -7,6 +7,11 @@ import { PagesComponent } from './pages.component';
 import { AppRoutingModule } from '../app-routing.module';
 import { SharedModule } from '../shared/shared.module';
 
+import { FormsModule } from '@angular/forms';
+import { ComponentsModule } from '../components/components.module';
+
+
+
 
 
 @NgModule({
@@ -15,6 +20,7 @@ import { SharedModule } from '../shared/shared.module';
     ProgressComponent,
     Grafica1Component,
     PagesComponent
+    
   ],
   exports:[
     DashboardComponent,
@@ -23,7 +29,7 @@ import { SharedModule } from '../shared/shared.module';
     PagesComponent
   ],
   imports: [
-    CommonModule,AppRoutingModule,SharedModule
+    CommonModule,AppRoutingModule,SharedModule,FormsModule,ComponentsModule
   ]
 })
 export class PagesModule { }

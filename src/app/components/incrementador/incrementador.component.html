@@ -1,0 +1,13 @@
+<div class="input-group">
+    <span class="input-group-btn">
+    <button (click)="disminuir(-5)" [ngClass]="btnClass" type="button"><i class="fa fa-minus"></i></button>
+    </span>
+
+
+    <input [ngClass]="{'is-invalid': valorBarra > 100 || valorBarra < 0}" (ngModelChange)="onChange($event)" [(ngModel)]="valorBarra" type="text" class="form-control" placeholder="Product name">
+    <span class="input-group-btn">
+
+
+    <button (click)="aumentar(5)" [ngClass]="btnClass" type="button"><i class="fa fa-plus"></i></button>   
+    </span>
+</div>
